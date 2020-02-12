@@ -74,3 +74,20 @@ b.addEventListener('click', (e) => {
     b.style.backgroundColor = "yellow";
     e.stopPropagation();
 })
+
+//keydown event llistener: input
+
+
+//wheel event listener
+const wheel = document.querySelectorAll(".nav-link");
+wheel.forEach(el => {
+    el.addEventListener('wheel', () => {
+        el.style.transform = "scale(2)";
+       
+    })
+})
+
+//drag/drop
+
+
+
