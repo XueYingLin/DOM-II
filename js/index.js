@@ -64,9 +64,13 @@ contentDestination.forEach(el => {
 })
 
 // Nest two similar events somewhere in the site and prevent the event propagation properly
+const a = document.querySelector(".content-destination");
+a.addEventListener('click', () => {
+    a.style.backgroundColor = "blue";
+})
 
-const w = document.querySelector(".content-destination");
-w.addEventListener('click', (e) => {
-    w.style.backgroundColor = "yellow";
+const b = document.querySelector(".content-destination h2");
+b.addEventListener('click', (e) => {
+    b.style.backgroundColor = "yellow";
     e.stopPropagation();
 })
